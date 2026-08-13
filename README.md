@@ -49,6 +49,6 @@ Since this is a static website, no build step or package installation is require
 
 ## 📫 Contact
 
-* **GitHub:** [@aman-a25](https://github.com/aman-a25)
+* **GitHub:** [[@Aman-Kumar-Developer](https://github.com/aman-a25](https://github.com/Aman-Kumar-Developer))
 * **LinkedIn:** [Aman Kumar](https://linkedin.com/in/aman-kumar-177811348)
 * **Email:** ak9910450375@gmail.com
