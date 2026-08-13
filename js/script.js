@@ -72,41 +72,41 @@ revealItems.forEach((item) => revealObserver.observe(item));
 // Current year.
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Profile Image Lightbox Logic
+// Image Lightbox Logic for ALL clickable images
 const modal = document.getElementById("imageModal");
-const profilePic = document.getElementById("profilePic");
 const modalImg = document.getElementById("expandedImage");
 const closeBtn = document.querySelector(".modal-close");
+const clickableImages = document.querySelectorAll(".clickable-image");
 
-// Open modal on click
-profilePic.onclick = function() {
-    modal.style.display = "flex";
-    // Brief timeout allows the browser to register display:flex before applying the opacity transition
-    setTimeout(() => {
-        modal.classList.add("show");
-    }, 10);
-    modalImg.src = this.src;
-}
+// Loop through all images with the class and attach the click event
+clickableImages.forEach((img) => {
+    img.onclick = function() {
+        modal.style.display = "flex";
+        setTimeout(() => {
+            modal.classList.add("show");
+        }, 10);
+        
+        // Checks if a high-res version exists in data-large, otherwise uses normal src
+        modalImg.src = this.getAttribute("data-large") || this.src;
+    }
+});
 
 // Function to close modal smoothly
 const closeModal = () => {
     modal.classList.remove("show");
     setTimeout(() => {
         modal.style.display = "none";
-    }, 300); // Matches the CSS transition duration
+    }, 300); 
 }
 
-// Close on 'X' click
 closeBtn.onclick = closeModal;
 
-// Close when clicking outside the image
 modal.onclick = function(event) {
     if (event.target !== modalImg) {
         closeModal();
     }
 }
 
-// Close on Escape key press
 document.addEventListener('keydown', function(event) {
     if (event.key === "Escape" && modal.classList.contains("show")) {
         closeModal();

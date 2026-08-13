@@ -193,9 +193,8 @@ h2 {
 .hero-banner {
     display: block;
     width: 100%;
-    height: auto;
-    aspect-ratio: auto;
-    object-fit: contain;
+    height: 320px; /* Locks the height on desktop */
+    object-fit: cover; /* Fills the space and smoothly crops the edges if needed */
     object-position: center;
     background: #020812;
     border-radius: 17px 17px 0 0;
@@ -373,10 +372,10 @@ h2 {
 }
 
 .architecture-card {
-    width: min(100%, 920px);
+    width: min(100%, 620px); /* Keeps it at ~2/3 of its original 920px max size */
     margin: 72px auto 0;
     overflow: hidden;
-    padding: 12px 12px 17px;
+    padding: 10px 10px 14px;
     border: 1px solid var(--border);
     border-radius: 17px;
     background: var(--surface);
@@ -385,6 +384,8 @@ h2 {
 .architecture-card img {
     display: block;
     width: 100%;
+    max-width: 580px; /* Constrains the actual image size */
+    margin-inline: auto; /* Centers it nicely inside the card */
     height: auto;
     border-radius: 10px;
     background: #020812;
@@ -794,12 +795,8 @@ h2 {
         padding-top: 45px;
     }
 
-    .hero-banner {
-        width: 100%;
-        height: auto;
-        aspect-ratio: auto;
-        object-fit: contain;
-        object-position: center;
+.hero-banner {
+        height: 160px; /* Smaller height for mobile devices */
     }
 
     .hero-content {
@@ -898,11 +895,6 @@ h2 {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.clickable-image:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 0 6px rgba(67, 133, 255, 0.4); /* Subtle blue glow on hover */
-}
-
 .modal {
     display: none; 
     position: fixed; 
@@ -951,6 +943,20 @@ h2 {
     line-height: 1;
 }
 
-.modal-close:hover {
-    color: var(--cyan);
+/* Only the profile photo zooms on hover */
+.profile-photo.clickable-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 6px rgba(67, 133, 255, 0.4);
+}
+
+/* Hero banner and architecture diagram get pointer and subtle opacity change, no zoom */
+.hero-banner.clickable-image,
+.architecture-card img.clickable-image {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.hero-banner.clickable-image:hover,
+.architecture-card img.clickable-image:hover {
+    opacity: 0.92; 
 }
