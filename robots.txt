@@ -1,0 +1,9 @@
+# Robots.txt for Aman Kumar's personal developer portfolio
+# Canonical site: https://aman-kumar-developer.github.io/
+
+# Allow all legitimate search-engine crawlers to discover and crawl the site.
+User-agent: *
+Allow: /
+
+# XML sitemap — helps search engines discover the canonical site URL.
+Sitemap: https://aman-kumar-developer.github.io/sitemap.xml
