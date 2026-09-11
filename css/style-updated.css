@@ -235,7 +235,7 @@ h2 {
 .hero-banner {
     display: block;
     width: 100%;
-    height: clamp(255px, 20vw, 285px);
+    height: clamp(270px, 20vw, 285px);
     object-fit: cover;
     object-position: center;
     background: #020812;
