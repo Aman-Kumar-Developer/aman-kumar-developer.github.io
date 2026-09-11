@@ -3,12 +3,140 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Aman Kumar — Java Backend Developer | Spring Boot</title>
         <meta
             name="description"
-            content="Aman Kumar — Java Backend Developer portfolio."
+            content="Aman Kumar is a Java Backend Developer and CSE graduate building backend applications with Java, Spring Boot, Hibernate/JPA, MySQL, REST APIs, Docker, Kafka and AWS."
         />
-        <title>Aman Kumar — Java Backend Developer</title>
+        <meta name="author" content="Aman Kumar" />
+        <meta
+            name="robots"
+            content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+
+        <!-- Canonical URL: the preferred indexable URL for this portfolio. -->
+        <link
+            rel="canonical"
+            href="https://aman-kumar-developer.github.io/"
+        />
+
+        <!-- Open Graph metadata for link previews and social sharing. -->
+        <meta
+            property="og:title"
+            content="Aman Kumar — Java Backend Developer | Spring Boot"
+        />
+        <meta
+            property="og:description"
+            content="Portfolio of Aman Kumar, a Java Backend Developer focused on Java, Spring Boot, Hibernate/JPA, MySQL, REST APIs, Docker, Kafka and AWS."
+        />
+        <meta
+            property="og:url"
+            content="https://aman-kumar-developer.github.io/"
+        />
+        <meta property="og:type" content="profile" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:site_name" content="Aman Kumar — Java Backend Developer" />
+        <meta
+            property="og:image"
+            content="https://aman-kumar-developer.github.io/images/hero-banner-DESKTOP.png"
+        />
+        <meta
+            property="og:image:alt"
+            content="Aman Kumar — Java Backend Developer portfolio banner"
+        />
+        <meta property="profile:first_name" content="Aman" />
+        <meta property="profile:last_name" content="Kumar" />
+
+        <!-- X/Twitter-compatible social preview metadata. -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Aman Kumar — Java Backend Developer | Spring Boot"
+        />
+        <meta
+            name="twitter:description"
+            content="Portfolio of Aman Kumar, a Java Backend Developer focused on Java, Spring Boot, Hibernate/JPA, MySQL, REST APIs, Docker, Kafka and AWS."
+        />
+        <meta
+            name="twitter:image"
+            content="https://aman-kumar-developer.github.io/images/hero-banner-DESKTOP.png"
+        />
+        <meta
+            name="twitter:image:alt"
+            content="Aman Kumar — Java Backend Developer portfolio banner"
+        />
+
         <link rel="stylesheet" href="css/style-updated.css" />
+
+        <!-- Structured data helps search engines understand the person and website. -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Person",
+              "@id": "https://aman-kumar-developer.github.io/#person",
+              "name": "Aman Kumar",
+              "url": "https://aman-kumar-developer.github.io/",
+              "image": "https://aman-kumar-developer.github.io/images/profile-photo%20(Small).png",
+              "jobTitle": "Java Backend Developer",
+              "description": "Java Backend Developer and Computer Science Engineering graduate focused on Java, Spring Boot, Hibernate/JPA, MySQL, REST APIs, Docker, Kafka and AWS.",
+              "sameAs": [
+                "https://github.com/Aman-Kumar-Developer",
+                "https://www.linkedin.com/in/aman-kumar-177811348/"
+              ],
+              "knowsAbout": [
+                "Java",
+                "Core Java",
+                "Object-Oriented Programming",
+                "Spring Boot",
+                "Spring Data JPA",
+                "Hibernate",
+                "REST APIs",
+                "Spring Security",
+                "MySQL",
+                "SQL",
+                "JDBC",
+                "Apache Kafka",
+                "Docker",
+                "Docker Compose",
+                "AWS",
+                "Kubernetes",
+                "Git",
+                "GitHub",
+                "Maven"
+              ],
+              "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "Krishna Engineering College"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://aman-kumar-developer.github.io/#website",
+              "url": "https://aman-kumar-developer.github.io/",
+              "name": "Aman Kumar — Java Backend Developer",
+              "description": "Professional portfolio of Aman Kumar, a Java Backend Developer focused on Java and Spring Boot backend development.",
+              "publisher": {
+                "@id": "https://aman-kumar-developer.github.io/#person"
+              }
+            },
+            {
+              "@type": "ProfilePage",
+              "@id": "https://aman-kumar-developer.github.io/#profilepage",
+              "url": "https://aman-kumar-developer.github.io/",
+              "name": "Aman Kumar — Java Backend Developer",
+              "isPartOf": {
+                "@id": "https://aman-kumar-developer.github.io/#website"
+              },
+              "mainEntity": {
+                "@id": "https://aman-kumar-developer.github.io/#person"
+              }
+            }
+          ]
+        }
+        </script>
     </head>
     <body>
         <header class="site-header">
@@ -30,6 +158,8 @@
                     <a class="nav-link" href="#skills">Skills</a>
                     <a class="nav-link" href="#projects">Projects</a>
                     <a class="nav-link" href="#education">Education</a>
+                    <a class="nav-link" href="#certifications">Certifications</a>
+                    <a class="nav-link" href="#focus">Focus</a>
                     <a class="nav-link" href="#contact">Contact</a>
                 </div>
             </nav>
@@ -43,8 +173,10 @@
                         <img
                             class="hero-banner clickable-image"
                             src="images/hero-banner-DESKTOP.png"
-                            alt="Java backend developer themed banner showing Java, Spring Boot, Hibernate, MySQL, Docker and Kubernetes"
+                            alt="Java backend developer portfolio banner featuring Java, Spring Boot, Hibernate, MySQL, Docker and Kubernetes"
                             loading="eager"
+                            fetchpriority="high"
+                            decoding="async"
                         />
 
                         <div class="hero-content">
@@ -53,13 +185,14 @@
                                     class="profile-photo clickable-image"
                                     id="profilePic"
                                     src="images/profile-photo (Small).png"
-                                    alt="Aman Kumar"
+                                    alt="Portrait of Aman Kumar, Java Backend Developer"
+                                    decoding="async"
                                 />
                                 <div class="profile-copy">
                                     <h1>Aman Kumar</h1>
                                     <p class="role">Java Backend Developer</p>
                                     <p class="location">
-                                        Loni, Ghaziabad, U.P., India
+                                        Loni, Ghaziabad, Uttar Pradesh, India
                                     </p>
                                 </div>
 
@@ -71,8 +204,9 @@
 
                             <p class="hero-description">
                                 Computer Science Engineering graduate focused on
-                                backend development using Java, Spring Boot,
-                                Hibernate/JPA, MySQL, and REST APIs.
+                                Java backend development using Spring Boot,
+                                Hibernate/JPA, MySQL, REST APIs, Docker, Kafka,
+                                and AWS.
                             </p>
 
                             <div class="hero-actions">
@@ -83,6 +217,7 @@
                                     class="button secondary"
                                     href="files/AMAN_kumar_java_1P.pdf"
                                     download
+                                    type="application/pdf"
                                     >Download Resume</a
                                 >
                             </div>
@@ -91,13 +226,13 @@
                                 <a
                                     href="https://github.com/Aman-Kumar-Developer"
                                     target="_blank"
-                                    rel="noopener"
+                                    rel="me noopener"
                                     >GitHub</a
                                 >
                                 <a
                                     href="https://linkedin.com/in/aman-kumar-177811348"
                                     target="_blank"
-                                    rel="noopener"
+                                    rel="me noopener"
                                     >LinkedIn</a
                                 >
                                 <a href="mailto:ak9910450375@gmail.com"
@@ -121,10 +256,11 @@
                         <div class="about-copy">
                             <p>
                                 I am a Computer Science Engineering graduate
-                                focused on Java backend development. I work with
-                                Core Java, Spring Boot, Hibernate/JPA, MySQL,
-                                and REST APIs, and I am continuously expanding
-                                my backend and cloud-native development skills.
+                                focused on Java backend development. I build
+                                backend applications with Core Java, Spring Boot,
+                                Hibernate/JPA, MySQL, REST APIs, and related
+                                backend technologies, while continuously expanding
+                                my cloud-native development skills.
                             </p>
                             <p>
                                 I enjoy understanding how backend systems work —
@@ -135,8 +271,9 @@
                             </p>
                             <p>
                                 Right now I am strengthening my backend
-                                fundamentals through projects and preparing for
-                                entry-level Java/Spring Boot opportunities.
+                                fundamentals through hands-on projects and
+                                preparing for entry-level Java and Spring Boot
+                                developer opportunities.
                             </p>
                         </div>
 
@@ -159,6 +296,7 @@
                             src="images/architecture.jpg"
                             class="clickable-image"
                             loading="lazy"
+                            decoding="async"
                             alt="Backend architecture diagram showing client, API gateway, Spring Boot services, MySQL, Docker and Kubernetes"
                         />
                         <p>
@@ -197,7 +335,7 @@
 
                     <div class="skill-grid">
                         <article class="skill-card">
-                            <h3>BACKEND</h3>
+                            <h3>Backend Development</h3>
                             <div class="chips">
                                 <span class="chip core">Java</span>
                                 <span class="chip core">Core Java / OOP</span>
@@ -215,7 +353,7 @@
                         </article>
 
                         <article class="skill-card">
-                            <h3>DATABASE</h3>
+                            <h3>Databases</h3>
                             <div class="chips">
                                 <span class="chip working">MySQL</span>
                                 <span class="chip working">SQL</span>
@@ -224,14 +362,14 @@
                         </article>
 
                         <article class="skill-card">
-                            <h3>MESSAGING</h3>
+                            <h3>Messaging</h3>
                             <div class="chips">
                                 <span class="chip working">Apache Kafka</span>
                             </div>
                         </article>
 
                         <article class="skill-card">
-                            <h3>DEVOPS / CLOUD</h3>
+                            <h3>DevOps &amp; Cloud</h3>
                             <div class="chips">
                                 <span class="chip core">Docker</span>
                                 <span class="chip core">AWS</span>
@@ -240,7 +378,7 @@
                         </article>
 
                         <article class="skill-card">
-                            <h3>DEVELOPMENT TOOLS</h3>
+                            <h3>Development Tools</h3>
                             <div class="chips">
                                 <span class="chip working">Git</span>
                                 <span class="chip working">GitHub</span>
@@ -251,7 +389,7 @@
                         </article>
 
                         <article class="skill-card">
-                            <h3>PROGRAMMING / WEB</h3>
+                            <h3>Programming &amp; Web</h3>
                             <div class="chips">
                                 <span class="chip working">HTML</span>
                                 <span class="chip working">CSS</span>
@@ -686,6 +824,7 @@
                                 class="button primary"
                                 href="files/resume.pdf"
                                 download
+                                type="application/pdf"
                                 >Download Resume</a
                             >
                             <a
